@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;
+	color: #666666;
+	background: #f1f1f1;
+}
+
+a{color: #0066cc;text-decoration: none;}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	background: white;
+	height: 31px;
+	border-bottom: solid 1px #CCCCCC;
+	-moz-box-shadow: 0px 5px 8px #999;
+	-webkit-box-shadow: 0px 5px 8px #999;
+	box-shadow: 0px 5px 8px #999;
+}
+
+nav {
+	background: url(../img/wx_logo.png) no-repeat;
+	height: 31px;
+}
+nav ul {
+	float: right;
+}
+nav ul li {
+	float: left;
+	line-height: 31px;
+	height: 31px;
+}
+
+footer{
+	margin-top: 500px;
+	font-size: 0.8em;
+	height: 42px;
+	line-height: 42px;
+	color: #EEEEEE;
+	background-color: #666666;
+	text-align: center;
+}
