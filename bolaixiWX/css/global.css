@@ -14,30 +14,71 @@ ul {
 	list-style-type: none;
 }
 
-header {
-	background: white;
-	height: 31px;
+nav {
+	background-color: white;
 	border-bottom: solid 1px #CCCCCC;
 	-moz-box-shadow: 0px 5px 8px #999;
 	-webkit-box-shadow: 0px 5px 8px #999;
 	box-shadow: 0px 5px 8px #999;
+	margin-bottom: 8px;
+	height: 36px;
+}
+.logoDv{
+	background: url(../img/wx_logo.png) no-repeat;
+	height:36px;
 }
 
-nav {
-	background: url(../img/wx_logo.png) no-repeat;
-	height: 31px;
+.menu{
+	display: none;
+	background-color: white;
+	position: absolute;
+	width: 50%;
+	left:42%;
+	border: solid 1px #CCCCCC;
+	-moz-box-shadow: 2px 2px 5px #999;
+	-webkit-box-shadow: 2px 2px 5px #999;
+	box-shadow: 2px 2px 5px #999;
+	padding: 5px 2.5%;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
 }
-nav ul {
+.menu ul li{
+	line-height: 2.0em;
+}
+.menu ul li:first-child{
+	border-bottom: solid 1px #ccc;
+}
+.menu ul li a{
+	display: block;
+}
+
+.nav-toggle{
 	float: right;
+	width:25px;
+	margin-top:16px;
+	padding-right: 8px;
 }
-nav ul li {
-	float: left;
-	line-height: 31px;
-	height: 31px;
+.nav-toggle span, .nav-toggle span:before,.nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 20px;
+  background: #333;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.nav-toggle span:before {
+  top: -6px;
+}
+.nav-toggle span:after {
+  bottom: -6px; 
 }
 
 footer{
-	margin-top: 500px;
+	margin-top: 10px;
+	clear: left;
 	font-size: 0.8em;
 	height: 42px;
 	line-height: 42px;
