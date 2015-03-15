@@ -19,6 +19,7 @@
 	display: inline-block;
 }
 .dlfloatdd dd {
+	color: #666;
 	background-color: white;
 	font-size: 0.9em;
 	float: left;
@@ -29,10 +30,10 @@
 	-webkit-box-shadow: 2px 2px 5px #999;
 	box-shadow: 2px 2px 5px #999;
 	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
-.dlnormal div{
+.dlnormal div {
 	background-color: white;
 	border: solid 1px #CCCCCC;
 	-moz-box-shadow: 2px 2px 5px #999;
@@ -40,12 +41,13 @@
 	box-shadow: 2px 2px 5px #999;
 	padding: 5px 2.5%;
 	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 .dlnormal dd {
 	font-size: 0.9em;
 	line-height: 1.6em;
+	color: #666;
 }
 .clear-left {
 	clear: left;
@@ -59,20 +61,20 @@
 	box-shadow: 2px 2px 5px #999;
 	padding: 5px 2.5%;
 	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
-h1{
+h1 {
 	font-size: 1em;
-color: white;
-background-color: #666;
+	color: white;
+	background-color: #666;
 }
-
-.desc{
-	margin-top:8px
+.desc {
+	margin-top: 8px
 }
-.desc ul li{
+.desc ul li {
 	font-size: 0.9em;
 	line-height: 1.5em;
 	font-weight: 600;
+	color: #666;
 }

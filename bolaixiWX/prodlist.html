@@ -8,6 +8,18 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<title>多利仕|产品展示</title>
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/box3d.css"/>
+		<script src="js/box3d.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.container{
+				background: url(img/bg.jpg) no-repeat center;
+				position: relative;
+				height: 180px;
+				padding-top:100px;
+				width:640px;
+				margin: 0 auto;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -31,12 +43,65 @@
 
 		</header>
 
-		
-		
+		<div class="container">
+
+			<div id="3dbox">
+
+				<span class="prev" onclick="goPrev()">&nbsp;</span>
+				<span class="next" onclick="goNext()">&nbsp;</span>
+
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="img/p1.png" />
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="img/p2.png" />
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="img/p3.png" />
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="img/p4.png" />
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="img/p5.png" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="">
+				
+			</div>
+			
+		</div>
+
 		<footer>
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
 		</footer>
 		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var box = new Box3D({
+				id: "3dbox"
+			}).init().doMove();
+
+			function goPrev() {
+				box.doPrev();
+			};
+
+			function goNext() {
+				box.doNext();
+			};
+		</script>
 	</body>
 
 </html>
