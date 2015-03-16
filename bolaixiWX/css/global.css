@@ -21,11 +21,11 @@ ul {
 	list-style-type: none;
 }
 nav {
-	background-color: #ffe;
-	border-bottom: solid 1px #CCCCCC;
-	/*-moz-box-shadow: 1px 1px 18px #ffe;
-	-webkit-box-shadow: 1px 1px 18px #ffe;
-	box-shadow: 1px 1px 18px #ffe;*/
+	/*background-color: #ffe;*/
+	/*border-bottom: solid 1px #CCCCCC;*/
+	-moz-box-shadow: 1px 1px 18px #ffe inset;
+	-webkit-box-shadow: 1px 1px 18px #ffe inset;
+	box-shadow: 1px 1px 18px #ffe inset;
 	margin-bottom: 8px;
 	height: 38px;
 }
@@ -83,6 +83,8 @@ nav {
 	bottom: -6px;
 }
 footer {
+	position: absolute;
+	bottom: 0px;
 	width: 100% margin-top: 10px;
 	clear: left;
 	font-size: 0.8em;
