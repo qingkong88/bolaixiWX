@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%">
 
 	<head>
 		<meta charset="utf-8">
@@ -8,32 +8,88 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<title>多利仕|产品展示</title>
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
-		<link rel="stylesheet" type="text/css" href="css/box3d.css"/>
+		<link rel="stylesheet" type="text/css" href="css/box3d.css" />
 		<script src="js/box3d.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
-			ul{list-style-type: none;}
-		
-			.container{
-				/*background-image: radial-gradient( circle closest-side,#666,black);*/
-				
-				
-				position: relative;
-				height: 240px;
-				padding-top:100px;
-				width:320px;
+			ul {
+				list-style-type: none;
+			}
+			.container {
+				position: absolute;
+				height: 50%;
+				padding-top: 100px;
+				width: 320px;
 				margin: 0 auto;
 			}
 			
+			.titlebox {
+				position: absolute;
+				width: 100%;
+				height: 66px;
+				background: url(img/logo.png) no-repeat left top;
+			}
+			.titlebox .contentTitle {
+				position: absolute;
+				padding: 5px 10px;
+				right: 0px;
+				height: 66px;
+				color: #EFD056;
+				font-size: 0.9em;
+				font-weight: bold;
+				text-shadow: 1px 1px #000000;
+				-moz-box-shadow: 3px -2px 12px #eee inset;
+				-webkit-box-shadow: 3px -2px 12px #eee inset;
+				box-shadow: 3px -2px 12px #eee inset;
+				-moz-border-radius: 2px 0px 0px 25px;
+				-webkit-border-radius: 2px 0px 0px 25px;
+				border-radius: 2px 0px 0px 25px;
+			}
+			.mainDesc {
+				padding-top: 120px;
+				width: 275px;
+				height: 90px;
+				margin: 0 auto;
+			}
+			.mainDesc .params{
+				position: absolute;
+				color: #fff;
+				text-align: center;
+				width: 260px;
+				height: 70px;
+				padding:10px;
+				font-size: 0.9em;
+				-moz-box-shadow: 3px -2px 12px #eee inset;
+				-webkit-box-shadow: 3px -2px 12px #eee inset;
+				box-shadow: 3px -2px 12px #eee inset;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				
+				transform: rotateX(0deg);
+				-webkit-transform: rotateX(0deg);
+				transition: transform 0.3s ease;
+				-webkit-transition: -webkit-transform 0.3s ease;
+				
+			}
+			.mainDesc .params ul li{
+				line-height:20px
+			}
 		</style>
 	</head>
 
-	<body>
+	<body style="height:100%">
+		<div class="bgDv">
+
+		</div>
 
 		<header>
 			<nav>
 				<div class="logoDv">
 					<div class="nav-toggle" id="popMenu"><span></span>
 					</div>
+
+					<p class="navTitle">产品展示</p>
+
 				</div>
 			</nav>
 
@@ -48,10 +104,17 @@
 
 		</header>
 
+		<div class="titlebox">
+			<!--<div class="contentTitle">
+				<p>超细机身&nbsp;舒适高效</p>
+				<p>多利仕720W-100mm角磨机</p>
+			</div>-->
+		</div>
+
 		<div class="container">
 
 			<div id="3dbox">
-				
+
 				<!--<p class="txtTitle">100毫米-720瓦 后开关角向磨光机</p>-->
 
 				<span class="prev" ontouchend="goPrev()">&nbsp;</span>
@@ -87,11 +150,13 @@
 					</li>
 				</ul>
 			</div>
-			
-			<div class="">
-				
+
+			<div class="mainDesc">
+				<div id="paramsDv" class="params">
+					<ul><li>纤细机身，单手操作舒适握持</li><li>升级防护，保障轴承使用寿命</li><li>优化电机，动力强劲，高效率抗过载</li></ul>
+				</div>
 			</div>
-			
+
 		</div>
 
 		<footer>
@@ -102,13 +167,38 @@
 			var box = new Box3D({
 				id: "3dbox"
 			}).init().doMove();
-
+			
+			var count = 0;
+			var descArry = [
+				"<ul><li>纤细机身，单手操作舒适握持</li><li>升级防护，保障轴承使用寿命</li><li>优化电机，动力强劲，高效率抗过载</li></ul>",
+				"<ul><li>进口电机，动力强劲</li><li>小巧外观，舒适握持</li><li>高品质锂电池，工作时间更持久</li></ul>",
+				"<ul><li>4.0Ah锂电池，工作时间更长久</li><li>汽车级制造水平，寿命更长久</li><li>配备套筒和背带，方便又安全</li></ul>",
+				"<ul><li>强劲电机，业内最高功率</li><li>软包胶顶盖，操作更舒适</li><li>同时机身，高品质部件，超长寿命</li></ul>",
+				"<ul><li>强劲电机，高效率，工作更轻松</li><li>纤细机身，易握持，使用更便捷</li><li>防尘设计，强密封，运行更平稳</li></ul>"
+			];
+			
 			function goPrev() {
+				count--;
+				var dv = document.getElementById("paramsDv");
+				descArry.push(descArry.shift());
+				dv.innerHTML = descArry[0];
+				dv.style.webkitTransform = "rotateX("+360*count+"deg)";
+				dv.style.transform = "rotateX("+360*count+"deg)";
+				
 				box.doPrev();
+		
 			};
 
 			function goNext() {
+				count++;
+				var dv = document.getElementById("paramsDv");
+				descArry.unshift(descArry.pop());
+				dv.innerHTML = descArry[0];
+				dv.style.webkitTransform = "rotateX("+360*count+"deg)";
+				dv.style.transform = "rotateX("+360*count+"deg)";
+				
 				box.doNext();
+				
 			};
 		</script>
 	</body>
