@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height:100%">
+<html>
 
 	<head>
 		<meta charset="utf-8">
@@ -15,13 +15,13 @@
 				list-style-type: none;
 			}
 			.container {
-				position: absolute;
+				/*position: absolute;*/
+				
 				height: 50%;
 				padding-top: 100px;
 				width: 320px;
 				margin: 0 auto;
 			}
-			
 			.titlebox {
 				position: absolute;
 				width: 100%;
@@ -45,18 +45,18 @@
 				border-radius: 2px 0px 0px 25px;
 			}
 			.mainDesc {
-				padding-top: 120px;
+				padding-top: 90px;
 				width: 275px;
 				height: 90px;
 				margin: 0 auto;
 			}
-			.mainDesc .params{
+			.mainDesc .params {
 				position: absolute;
 				color: #fff;
 				text-align: center;
 				width: 260px;
 				height: 70px;
-				padding:10px;
+				padding: 10px;
 				font-size: 0.9em;
 				-moz-box-shadow: 3px -2px 12px #eee inset;
 				-webkit-box-shadow: 3px -2px 12px #eee inset;
@@ -64,23 +64,60 @@
 				-moz-border-radius: 5px;
 				-webkit-border-radius: 5px;
 				border-radius: 5px;
-				
 				transform: rotateX(0deg);
 				-webkit-transform: rotateX(0deg);
 				transition: transform 0.3s ease;
 				-webkit-transition: -webkit-transform 0.3s ease;
-				
 			}
-			.mainDesc .params ul li{
-				line-height:20px
+			.mainDesc .params ul li {
+				line-height: 20px
+			}
+			.button {
+				display: inline-block;
+				position: relative;
+				margin: 10px;
+				padding: 0 20px;
+				text-align: center;
+				text-decoration: none;
+				font: bold 12px/25px Arial, sans-serif;
+				text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				-webkit-transition: all 0.15s ease;
+				-moz-transition: all 0.15s ease;
+				-o-transition: all 0.15s ease;
+				-ms-transition: all 0.15s ease;
+				transition: all 0.15s ease;
+			}
+			.blue {
+				color: #19667d;
+				background: #70c9e3;
+				background: -moz-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #70c9e3), color-stop(100%, #39a0be));
+				background: -webkit-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -o-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -ms-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+			}
+			.green {
+				color: #3e5706;
+				background: #a5cd4e;
+				background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5cd4e), color-stop(100%, #6b8f1a));
+				background: -webkit-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -o-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -ms-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
 			}
 		</style>
 	</head>
 
-	<body style="height:100%">
-		<div class="bgDv">
-
-		</div>
+	<body>
+		
 
 		<header>
 			<nav>
@@ -152,9 +189,20 @@
 			</div>
 
 			<div class="mainDesc">
+
 				<div id="paramsDv" class="params">
-					<ul><li>纤细机身，单手操作舒适握持</li><li>升级防护，保障轴承使用寿命</li><li>优化电机，动力强劲，高效率抗过载</li></ul>
+					<ul>
+						<li>纤细机身，单手操作舒适握持</li>
+						<li>升级防护，保障轴承使用寿命</li>
+						<li>优化电机，动力强劲，高效率抗过载</li>
+					</ul>
 				</div>
+				
+				<div align="center" style="margin-top:100px">
+					<a href="" class="button blue">查看系列详细</a>
+					<a href="prods/jiaomo/prod_BA720.html" class="button green">查看单品详细</a>
+				</div>
+				
 			</div>
 
 		</div>
@@ -167,7 +215,6 @@
 			var box = new Box3D({
 				id: "3dbox"
 			}).init().doMove();
-			
 			var count = 0;
 			var descArry = [
 				"<ul><li>纤细机身，单手操作舒适握持</li><li>升级防护，保障轴承使用寿命</li><li>优化电机，动力强劲，高效率抗过载</li></ul>",
@@ -176,17 +223,15 @@
 				"<ul><li>强劲电机，业内最高功率</li><li>软包胶顶盖，操作更舒适</li><li>同时机身，高品质部件，超长寿命</li></ul>",
 				"<ul><li>强劲电机，高效率，工作更轻松</li><li>纤细机身，易握持，使用更便捷</li><li>防尘设计，强密封，运行更平稳</li></ul>"
 			];
-			
+
 			function goPrev() {
 				count--;
 				var dv = document.getElementById("paramsDv");
 				descArry.push(descArry.shift());
 				dv.innerHTML = descArry[0];
-				dv.style.webkitTransform = "rotateX("+360*count+"deg)";
-				dv.style.transform = "rotateX("+360*count+"deg)";
-				
+				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
+				dv.style.transform = "rotateX(" + 360 * count + "deg)";
 				box.doPrev();
-		
 			};
 
 			function goNext() {
@@ -194,13 +239,14 @@
 				var dv = document.getElementById("paramsDv");
 				descArry.unshift(descArry.pop());
 				dv.innerHTML = descArry[0];
-				dv.style.webkitTransform = "rotateX("+360*count+"deg)";
-				dv.style.transform = "rotateX("+360*count+"deg)";
-				
+				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
+				dv.style.transform = "rotateX(" + 360 * count + "deg)";
 				box.doNext();
-				
 			};
 		</script>
+		<!--<div class="bgDv">
+
+		</div>-->
 	</body>
 
 </html>

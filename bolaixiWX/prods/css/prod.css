@@ -6,6 +6,7 @@
 	padding-top: 5px;
 }
 .mybox dt {
+	color: #fff;
 	font-weight: bold;
 	font-size: 1.1em;
 	padding-bottom: 8px;
@@ -19,26 +20,24 @@
 	display: inline-block;
 }
 .dlfloatdd dd {
-	color: #666;
-	background-color: white;
+	color: #fff;
 	font-size: 0.9em;
 	float: left;
 	padding: 2px 5px;
 	margin: 0px 2px 5px 0px;
 	border: solid 1px #ccc;
-	-moz-box-shadow: 2px 2px 5px #999;
-	-webkit-box-shadow: 2px 2px 5px #999;
-	box-shadow: 2px 2px 5px #999;
+	-moz-box-shadow: 1px -1px 5px #eee inset;
+	-webkit-box-shadow: 1px -1px 5px #eee inset;
+	box-shadow: 1px -1px 5px #eee inset;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 .dlnormal div {
-	background-color: white;
 	border: solid 1px #CCCCCC;
-	-moz-box-shadow: 2px 2px 5px #999;
-	-webkit-box-shadow: 2px 2px 5px #999;
-	box-shadow: 2px 2px 5px #999;
+	-moz-box-shadow: 3px -2px 12px #eee inset;
+	-webkit-box-shadow: 3px -2px 12px #eee inset;
+	box-shadow: 3px -2px 12px #eee inset;
 	padding: 5px 2.5%;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -47,18 +46,18 @@
 .dlnormal dd {
 	font-size: 0.9em;
 	line-height: 1.6em;
-	color: #666;
+	color: #fff;
 }
 .clear-left {
 	clear: left;
 }
 .text_pic {
 	text-align: center;
-	background-color: white;
+	/*background-color: white;*/
 	border: solid 1px #CCCCCC;
-	-moz-box-shadow: 2px 2px 5px #999;
-	-webkit-box-shadow: 2px 2px 5px #999;
-	box-shadow: 2px 2px 5px #999;
+	-moz-box-shadow: 3px -2px 12px #eee inset;
+	-webkit-box-shadow: 3px -2px 12px #eee inset;
+	box-shadow: 3px -2px 12px #eee inset;
 	padding: 5px 2.5%;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -66,8 +65,8 @@
 }
 h1 {
 	font-size: 1em;
-	color: white;
-	background-color: #666;
+	color: #fff;
+	/*background-color: #fff;*/
 }
 .desc {
 	margin-top: 8px
@@ -76,5 +75,5 @@ h1 {
 	font-size: 0.9em;
 	line-height: 1.5em;
 	font-weight: 600;
-	color: #666;
+	color: #fff;
 }

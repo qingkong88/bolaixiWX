@@ -12,7 +12,7 @@ body {
 	background-color: #282828;
 	background-size: 16px 16px;
 }
-.light {} a {
+a {
 	color: #0066cc;
 	text-decoration: none;
 }
@@ -31,7 +31,7 @@ nav {
 }
 .bgDv {
 	z-index: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
