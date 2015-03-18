@@ -1,0 +1,17 @@
+.typelist{
+	width: 90%;
+	padding:8px 2.5%;
+}
+
+.typelist ul li{
+	float:left;
+	width:100px;
+	height:150px;
+	-moz-box-shadow: 3px -2px 12px #eee inset;
+	-webkit-box-shadow: 3px -2px 12px #eee inset;
+	box-shadow: 3px -2px 12px #eee inset;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
