@@ -23,9 +23,10 @@ nav {
 	/*background-color: #ffe;*/
 	/*border-bottom: solid 1px #CCCCCC;*/
 	
-	-moz-box-shadow: 3px -2px 12px #eee inset;
+	/*-moz-box-shadow: 3px -2px 12px #eee inset;
 	-webkit-box-shadow: 3px -2px 12px #eee inset;
-	box-shadow: 3px -2px 12px #eee inset;
+	box-shadow: 3px -2px 12px #eee inset;*/
+	border-bottom: solid 1px #fff;
 	margin-bottom: 8px;
 	height: 38px;
 }
@@ -45,6 +46,8 @@ nav {
 	height: 36px;
 }
 .navTitle {
+	display: block;
+	height:50px;
 	width: 100%;
 	position: absolute;
 	line-height: 36px;
@@ -105,15 +108,15 @@ nav {
 	bottom: -6px;
 }
 footer {
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	width: 100% margin-top: 10px;
-	clear: left;
+	/*position: inherit;*/
+	clear: both;
+	bottom: 0;
+	width: 100% ;
 	font-size: 0.8em;
 	height: 22px;
 	line-height: 22px;
-	color: #666;
-	background-color: #ffe;
+	color: #fff;
+	border-top: solid 1px #fff;
+	/*border-bottom: solid 1px #fff;*/
 	text-align: center;
 }

@@ -36,11 +36,11 @@ Box3D.prototype = {
 		return this;
 	},
 	doPrev: function() {
-		this.arr.push(this.arr.shift());
+		this.arr.unshift(this.arr.pop());
 		return this.doMove();
 	},
 	doNext: function() {
-		this.arr.unshift(this.arr.pop());
+		this.arr.push(this.arr.shift());
 		return this.doMove();
 	},
 	doMove: function() {

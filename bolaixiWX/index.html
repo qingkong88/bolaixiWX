@@ -134,7 +134,7 @@
 				<ul>
 					<li><a href="index.html">首页</a>
 					</li>
-					<li><a href="prodlist.html">产品展示</a>
+					<li><a href="index.html">产品展示</a>
 					</li>
 				</ul>
 			</div>
@@ -154,26 +154,26 @@
 
 				<!--<p class="txtTitle">100毫米-720瓦 后开关角向磨光机</p>-->
 
-				<span class="prev" ontouchend="goPrev()">&nbsp;</span>
-				<span class="next" ontouchend="goNext()">&nbsp;</span>
-				<!--<span class="prev" onclick="goPrev()">&nbsp;</span>
-				<span class="next" onclick="goNext()">&nbsp;</span>-->
+				<!--<span class="prev" ontouchend="goPrev()">&nbsp;</span>
+				<span class="next" ontouchend="goNext()">&nbsp;</span>-->
+				<span class="prev" onclick="goPrev()">&nbsp;</span>
+				<span class="next" onclick="goNext()">&nbsp;</span>
 
 				<ul>
 					<li>
-						<a href="index.html">
+						<!--<a href="index.html">-->
 							<img src="img/p1.png" />
-						</a>
+						<!--</a>-->
 					</li>
 					<li>
-						<a href="index.html">
+						<!--<a href="index.html">-->
 							<img src="img/p2.png" />
-						</a>
+						<!--</a>-->
 					</li>
 					<li>
-						<a href="index.html">
+						<!--<a href="index.html">-->
 							<img src="img/p3.png" />
-						</a>
+						<!--</a>-->
 					</li>
 					<li>
 						<a href="index.html">
@@ -181,9 +181,9 @@
 						</a>
 					</li>
 					<li>
-						<a href="index.html">
+						<!--<a href="index.html">-->
 							<img src="img/p5.png" />
-						</a>
+						<!--</a>-->
 					</li>
 				</ul>
 			</div>
@@ -199,15 +199,18 @@
 				</div>
 				
 				<div align="center" style="margin-top:100px">
-					<a href="" class="button blue">查看系列详细</a>
+					<a href="javascript:gotlist()" class="button blue">查看系列详细</a>
 					<a href="prods/jiaomo/prod_BA720.html" class="button green">查看单品详细</a>
 				</div>
 				
 			</div>
+		
 
 		</div>
 
-		<footer>
+		
+
+		<footer style="position: absolute;">
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
 		</footer>
 		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
@@ -223,26 +226,44 @@
 				"<ul><li>强劲电机，业内最高功率</li><li>软包胶顶盖，操作更舒适</li><li>同时机身，高品质部件，超长寿命</li></ul>",
 				"<ul><li>强劲电机，高效率，工作更轻松</li><li>纤细机身，易握持，使用更便捷</li><li>防尘设计，强密封，运行更平稳</li></ul>"
 			];
+			var tArry = [
+				"prods/tlidian.html",
+				"prods/tlidian.html",
+				"prods/tlidian.html",
+				"prods/tjiaomo.html",
+				"prods/tshamo.html"
+			];
 
 			function goPrev() {
+				
+				
 				count--;
-				var dv = document.getElementById("paramsDv");
-				descArry.push(descArry.shift());
-				dv.innerHTML = descArry[0];
-				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
-				dv.style.transform = "rotateX(" + 360 * count + "deg)";
-				box.doPrev();
-			};
-
-			function goNext() {
-				count++;
 				var dv = document.getElementById("paramsDv");
 				descArry.unshift(descArry.pop());
 				dv.innerHTML = descArry[0];
 				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
 				dv.style.transform = "rotateX(" + 360 * count + "deg)";
 				box.doNext();
+				
+				tArry.unshift(tArry.pop());
+				
 			};
+
+			function goNext() {
+				count++;
+				var dv = document.getElementById("paramsDv");
+				descArry.push(descArry.shift());
+				dv.innerHTML = descArry[0];
+				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
+				dv.style.transform = "rotateX(" + 360 * count + "deg)";
+				box.doPrev();
+				
+				tArry.push(tArry.shift());
+			};
+			
+			function gotlist(){
+				location.href = tArry[0];
+			}
 		</script>
 		<!--<div class="bgDv">
 
