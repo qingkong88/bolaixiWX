@@ -113,7 +113,7 @@ footer {
 	bottom: 0;
 	width: 100% ;
 	font-size: 0.8em;
-	height: 22px;
+	max-height: 44px;
 	line-height: 22px;
 	color: #fff;
 	border-top: solid 1px #fff;

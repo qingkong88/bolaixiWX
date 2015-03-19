@@ -117,7 +117,6 @@
 	</head>
 
 	<body>
-		
 
 		<header>
 			<nav>
@@ -154,25 +153,25 @@
 
 				<!--<p class="txtTitle">100毫米-720瓦 后开关角向磨光机</p>-->
 
-				<!--<span class="prev" ontouchend="goPrev()">&nbsp;</span>
-				<span class="next" ontouchend="goNext()">&nbsp;</span>-->
-				<span class="prev" onclick="goPrev()">&nbsp;</span>
-				<span class="next" onclick="goNext()">&nbsp;</span>
+				<span class="prev" ontouchend="goPrev()">&nbsp;</span>
+				<span class="next" ontouchend="goNext()">&nbsp;</span>
+				<!--<span class="prev" onclick="goPrev()">&nbsp;</span>
+				<span class="next" onclick="goNext()">&nbsp;</span>-->
 
 				<ul>
 					<li>
 						<!--<a href="index.html">-->
-							<img src="img/p1.png" />
+						<img src="img/p1.png" />
 						<!--</a>-->
 					</li>
 					<li>
 						<!--<a href="index.html">-->
-							<img src="img/p2.png" />
+						<img src="img/p2.png" />
 						<!--</a>-->
 					</li>
 					<li>
 						<!--<a href="index.html">-->
-							<img src="img/p3.png" />
+						<img src="img/p3.png" />
 						<!--</a>-->
 					</li>
 					<li>
@@ -182,7 +181,7 @@
 					</li>
 					<li>
 						<!--<a href="index.html">-->
-							<img src="img/p5.png" />
+						<img src="img/p5.png" />
 						<!--</a>-->
 					</li>
 				</ul>
@@ -197,21 +196,19 @@
 						<li>优化电机，动力强劲，高效率抗过载</li>
 					</ul>
 				</div>
-				
+
 				<div align="center" style="margin-top:100px">
 					<a href="javascript:gotlist()" class="button blue">查看系列详细</a>
-					<a href="prods/jiaomo/prod_BA720.html" class="button green">查看单品详细</a>
+					<a href="javascript:gotDetail()" class="button green">查看单品详细</a>
 				</div>
-				
+
 			</div>
-		
 
 		</div>
 
-		
-
 		<footer style="position: absolute;">
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
+			<br /> 联系我们：4008289666
 		</footer>
 		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
@@ -233,6 +230,13 @@
 				"prods/tjiaomo.html",
 				"prods/tshamo.html"
 			];
+			var dArry = [
+				"prods/lidian/prod_BD612.html",
+				"prods/lidian/prod_BD5186.html",
+				"prods/lidian/prod_BD616.html",
+				"prods/jiaomo/prod_BA720.html",
+				"prods/shamo/prod_BA3260.html"
+			];
 
 			function goPrev() {
 				
@@ -246,6 +250,7 @@
 				box.doNext();
 				
 				tArry.unshift(tArry.pop());
+				dArry.unshift(dArry.pop());
 				
 			};
 
@@ -259,10 +264,14 @@
 				box.doPrev();
 				
 				tArry.push(tArry.shift());
+				dArry.push(dArry.shift());
 			};
 			
 			function gotlist(){
 				location.href = tArry[0];
+			}
+			function gotDetail(){
+				location.href = dArry[0];
 			}
 		</script>
 		<!--<div class="bgDv">

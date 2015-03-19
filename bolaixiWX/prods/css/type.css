@@ -47,3 +47,7 @@
 	border-radius: 5px;
 	
 }
+.typelist ul li img{
+	width:120px;
+	height: 96px;
+}
