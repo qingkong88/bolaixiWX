@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>多利仕|招贤纳士</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<style type="text/css">
+			.joinMes {
+				margin: 0 auto;
+				padding: 15px 5%;
+				width: 90%;
+				color: white;
+			}
+			.joinMes input {
+				width: 100%;
+				margin: 8px 0px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				height: 30px;
+			}
+			.button {
+				display: inline-block;
+				position: relative;
+				margin: 10px 0px;
+				/*padding: 0 20px;*/
+				text-align: center;
+				text-decoration: none;
+				font: bold 12px/25px Arial, sans-serif;
+				text-shadow: 1px 1px 1px rgba(255, 255, 255, .22);
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+				-webkit-transition: all 0.15s ease;
+				-moz-transition: all 0.15s ease;
+				-o-transition: all 0.15s ease;
+				-ms-transition: all 0.15s ease;
+				transition: all 0.15s ease;
+			}
+			.blue {
+				color: #19667d;
+				background: #70c9e3;
+				background: -moz-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #70c9e3), color-stop(100%, #39a0be));
+				background: -webkit-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -o-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: -ms-linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+				background: linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+			}
+			.green {
+				color: #3e5706;
+				background: #a5cd4e;
+				background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5cd4e), color-stop(100%, #6b8f1a));
+				background: -webkit-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -o-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: -ms-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+				background: linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="logoDv">
+					<div class="nav-toggle" id="popMenu"><span></span>
+					</div>
+
+					<p class="navTitle">产品展示</p>
+
+				</div>
+			</nav>
+
+			<div id="menu" class="menu">
+				<ul>
+					<li><a href="index.html">产品展示</a>
+					</li>
+					<li><a href="join.html">招贤纳士</a>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+
+		<div class="joinMes">
+			<!--<form action="join.html"  method="post">-->
+				联系人姓名：
+				<br />
+				<input type="text" name="txtName" style="text-indent: 20px;" id="txtName" value="" maxlength="20" />
+				<br /> 联系电话：
+				<br />
+				<input type="tel" name="txtPhone" style="text-indent: 20px;" id="txtPhone" value="" maxlength="20" />
+
+				<a href="javascript:gotlist()" ontouchend="submit()" style="width:100%" class="button blue">提交</a>
+			<!--</form>-->
+
+		</div>
+		<script type="text/javascript">
+			function submit(){
+				alert("提交成功！");
+			}
+		</script>
+
+		<footer style="position: absolute;">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
+			<br /> 联系我们：4008289666
+		</footer>
+
+	</body>
+
+</html>

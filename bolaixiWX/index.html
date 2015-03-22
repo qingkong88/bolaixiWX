@@ -11,14 +11,14 @@
 		<link rel="stylesheet" type="text/css" href="css/box3d.css" />
 		<script src="js/box3d.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
-			ul {
+			/*ul {
 				list-style-type: none;
-			}
+			}*/
 			.container {
 				/*position: absolute;*/
 				
 				height: 50%;
-				padding-top: 100px;
+				padding-top: 120px;
 				width: 320px;
 				margin: 0 auto;
 			}
@@ -29,48 +29,64 @@
 				background: url(img/logo.png) no-repeat left top;
 			}
 			.titlebox .contentTitle {
-				position: absolute;
-				padding: 5px 10px;
-				right: 0px;
-				height: 66px;
+				padding: 5px 2%;
+				float: left;
+				margin-left: 120px;
+				height: 36px;
 				color: #EFD056;
 				font-size: 0.9em;
 				font-weight: bold;
 				text-shadow: 1px 1px #000000;
-				-moz-box-shadow: 3px -2px 12px #eee inset;
+				/*-moz-box-shadow: 3px -2px 12px #eee inset;
 				-webkit-box-shadow: 3px -2px 12px #eee inset;
-				box-shadow: 3px -2px 12px #eee inset;
-				-moz-border-radius: 2px 0px 0px 25px;
-				-webkit-border-radius: 2px 0px 0px 25px;
-				border-radius: 2px 0px 0px 25px;
+				box-shadow: 3px -2px 12px #eee inset;*/
+				/*border: solid 1px #fff;*/
+				
+				-moz-border-radius: 10px 0px 0px 10px;
+				-webkit-border-radius: 10px 0px 0px 10px;
+				border-radius: 10px 0px 0px 10px;
+			}
+			.titlebox .contentTitle p {
+				line-height: 18px;
 			}
 			.mainDesc {
 				padding-top: 90px;
-				width: 275px;
+				width: 300px;
 				height: 90px;
 				margin: 0 auto;
 			}
 			.mainDesc .params {
-				position: absolute;
 				color: #fff;
 				text-align: center;
-				width: 260px;
-				height: 70px;
+				width: 285px;
+				/*height: 70px;*/
+				
 				padding: 10px;
 				font-size: 0.9em;
-				-moz-box-shadow: 3px -2px 12px #eee inset;
-				-webkit-box-shadow: 3px -2px 12px #eee inset;
-				box-shadow: 3px -2px 12px #eee inset;
-				-moz-border-radius: 5px;
+				/*border: solid 1px #EFD056;*/
+				
+				/*-moz-border-radius: 5px;
 				-webkit-border-radius: 5px;
-				border-radius: 5px;
-				transform: rotateX(0deg);
-				-webkit-transform: rotateX(0deg);
-				transition: transform 0.3s ease;
-				-webkit-transition: -webkit-transform 0.3s ease;
+				border-radius: 5px;*/
 			}
 			.mainDesc .params ul li {
-				line-height: 20px
+				line-height: 1.8em;
+				height: 1.8em;
+			}
+			.mainDesc .params ul li span {
+				display: block;
+				float: left;
+				width: 41%;
+				padding: 0 4%;
+			}
+			.mylabel {
+				border-bottom: solid 1px #fff;
+				border-right: solid 1px #fff;
+				text-align: right;
+			}
+			.myvalue {
+				border-bottom: solid 1px #fff;
+				text-align: left;
 			}
 			.button {
 				display: inline-block;
@@ -113,6 +129,26 @@
 				background: -ms-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
 				background: linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
 			}
+			.indexParam {
+				/*width: 100%;*/
+			}
+			.indexParam .mylabel {
+				display: block;
+				width: 40%;
+				text-align: right;
+				border-bottom: solid 1px #fff;
+				border-right: solid 1px #fff;
+			}
+			.indexParam .myvalue {
+				width: 40%;
+				display: block;
+				text-align: left;
+				border-bottom: solid 1px #fff;
+			}
+			.detail_1,.detail_2,.detail_3,.detail_4,.detail_5,
+			.title_1,.title_2,.title_3,.title_4,.title_5{
+				transition: visibility 0.5s ease;
+			}
 		</style>
 	</head>
 
@@ -131,9 +167,9 @@
 
 			<div id="menu" class="menu">
 				<ul>
-					<li><a href="index.html">首页</a>
-					</li>
 					<li><a href="index.html">产品展示</a>
+					</li>
+					<li><a href="join.html">招贤纳士</a>
 					</li>
 				</ul>
 			</div>
@@ -141,10 +177,28 @@
 		</header>
 
 		<div class="titlebox">
-			<!--<div class="contentTitle">
-				<p>超细机身&nbsp;舒适高效</p>
-				<p>多利仕720W-100mm角磨机</p>
-			</div>-->
+			<div class="contentTitle">
+				<div id="title_1">
+					<p style="font-size: 1.4em;">BA612</p>
+					<p style="color: #fff;">10毫米-12伏 锂电单速钻</p>
+				</div>
+				<div id="title_2" style="display: none;">
+					<p style="font-size: 1.4em;">BD5186</p>
+					<p style="color: #fff;">21伏 锂电冲击扳手</p>
+				</div>
+				<div id="title_3" style="display: none;">
+					<p style="font-size: 1.4em;">BD616</p>
+					<p style="color: #fff;">10毫米-16伏 锂电双速钻</p>
+				</div>
+				<div id="title_4" style="display: none;">
+					<p style="font-size: 1.4em;">BA720</p>
+					<p style="color: #fff;">100毫米-720瓦 后开关角向磨光机</p>
+				</div>
+				<div id="title_5" style="display: none;">
+					<p style="font-size: 1.4em;">BA3260</p>
+					<p style="color: #fff;">113*102毫米-260瓦 平板式砂光机</p>
+				</div>
+			</div>
 		</div>
 
 		<div class="container">
@@ -153,8 +207,8 @@
 
 				<!--<p class="txtTitle">100毫米-720瓦 后开关角向磨光机</p>-->
 
-				<span class="prev" ontouchend="goPrev()">&nbsp;</span>
 				<span class="next" ontouchend="goNext()">&nbsp;</span>
+								<span class="prev" ontouchend="goPrev()">&nbsp;</span>
 				<!--<span class="prev" onclick="goPrev()">&nbsp;</span>
 				<span class="next" onclick="goNext()">&nbsp;</span>-->
 
@@ -189,24 +243,111 @@
 
 			<div class="mainDesc">
 
-				<div id="paramsDv" class="params">
-					<ul>
-						<li>纤细机身，单手操作舒适握持</li>
-						<li>升级防护，保障轴承使用寿命</li>
-						<li>优化电机，动力强劲，高效率抗过载</li>
+				<div align="center">
+					<a href="javascript:gotlist()" class="button blue">查看系列详细</a>
+					<a href="javascript:gotDetail()" class="button green">查看单品详细</a>
+				</div>
+
+				<div class="params">
+					<ul id="detail_1">
+						<li><span class="mylabel">电池电压</span><span class="myvalue">12伏特</span>
+						</li>
+						<li><span class="mylabel">额定空载转速</span><span class="myvalue">0-650转/分钟</span>
+						</li>
+						<li><span class="mylabel">夹头</span><span class="myvalue">10毫米</span>
+						</li>
+						<li><span class="mylabel">最大扭矩</span><span class="myvalue">22牛顿.米</span>
+						</li>
+						<li><span class="mylabel">力调节档位</span><span class="myvalue">22档（含钻进档）</span>
+						</li>
+						<li><span class="mylabel">电池容量</span><span class="myvalue">1500毫安.小时</span>
+						</li>
+						<li><span class="mylabel">充电时间</span><span class="myvalue">60分钟</span>
+						</li>
+						<li><span class="mylabel" style="border-bottom: 0px;">重量</span><span class="myvalue" style="border-bottom: 0px;">1.0千克</span>
+						</li>
+					</ul>
+					<ul id="detail_2" style="display: none;">
+						<li><span class="mylabel">电池电压</span><span class="myvalue">21伏特</span>
+						</li>
+						<li><span class="mylabel">额定空载转速</span><span class="myvalue">0-2000转/分钟</span>
+						</li>
+						<li><span class="mylabel">额定冲击次数</span><span class="myvalue">0-2500次/分钟</span>
+						</li>
+						<li><span class="mylabel">夹头</span><span class="myvalue">12.7毫米</span>
+						</li>
+						<li><span class="mylabel">最大扭矩</span><span class="myvalue">200牛顿.米</span>
+						</li>
+						<li><span class="mylabel">电池容量</span><span class="myvalue">4000毫安.小时</span>
+						</li>
+						<li><span class="mylabel">充电时间</span><span class="myvalue">100分钟</span>
+						</li>
+						<li><span class="mylabel" style="border-bottom: 0px;">重量</span><span class="myvalue" style="border-bottom: 0px;">1.6千克</span>
+						</li>
+					</ul>
+					<ul id="detail_3" style="display: none;">
+						<li><span class="mylabel">电池电压</span><span class="myvalue">16伏特</span>
+						</li>
+						<li><span class="mylabel">额定空载转速</span><span class="myvalue">0-400/1500转/分</span>
+						</li>
+						<li><span class="mylabel">夹头</span><span class="myvalue">10毫米</span>
+						</li>
+						<li><span class="mylabel">最大扭矩</span><span class="myvalue">35牛顿.米</span>
+						</li>
+						<li><span class="mylabel">扭力调节档位</span><span class="myvalue">16档（含钻进档）</span>
+						</li>
+						<li><span class="mylabel">钻孔能力</span><span class="myvalue">木材28毫米</span>
+						</li>
+						<li><span class="mylabel">&nbsp;</span><span class="myvalue">钢材10毫米</span>
+						</li>
+						<li><span class="mylabel">电池容量</span><span class="myvalue">1500毫安.小时</span>
+						</li>
+						<li><span class="mylabel">充电时间</span><span class="myvalue">30分钟</span>
+						</li>
+						<li><span class="mylabel" style="border-bottom: 0px;">重量</span><span class="myvalue" style="border-bottom: 0px;">1.2千克</span>
+						</li>
+					</ul>
+					<ul id="detail_4" style="display: none;">
+						<li><span class="mylabel">额定输入功率</span><span class="myvalue">720瓦</span>
+						</li>
+						<li><span class="mylabel">额定转速</span><span class="myvalue">12000转/分钟</span>
+						</li>
+						<li><span class="mylabel">砂轮片直径</span><span class="myvalue">100毫米</span>
+						</li>
+						<li><span class="mylabel">砂轮片内孔</span><span class="myvalue">16毫米</span>
+						</li>
+						<li><span class="mylabel">主轴螺纹</span><span class="myvalue">M10</span>
+						</li>
+						<li><span class="mylabel" style="border-bottom: 0px;">重量</span><span class="myvalue" style="border-bottom: 0px;">1.7千克</span>
+						</li>
+					</ul>
+					<ul id="detail_5" style="display: none;">
+						<li><span class="mylabel">额定输入功率</span><span class="myvalue">260瓦</span>
+						</li>
+						<li><span class="mylabel">额定转速</span><span class="myvalue">13500转/分钟</span>
+						</li>
+						<li><span class="mylabel">底板尺寸</span><span class="myvalue">113*102毫米</span>
+						</li>
+						<li><span class="mylabel">砂纸尺寸</span><span class="myvalue">140*115毫米</span>
+						</li>
+						<li><span class="mylabel">轨道直径</span><span class="myvalue">1.5毫米</span>
+						</li>
+						<li><span class="mylabel" style="border-bottom: 0px;">重量</span><span class="myvalue" style="border-bottom: 0px;">1.1千克</span>
+						</li>
 					</ul>
 				</div>
 
-				<div align="center" style="margin-top:100px">
-					<a href="javascript:gotlist()" class="button blue">查看系列详细</a>
-					<a href="javascript:gotDetail()" class="button green">查看单品详细</a>
 				</div>
 
 			</div>
 
 		</div>
+		
+		<div style="height:10px;padding-top: 230px">
+			
+		</div>
 
-		<footer style="position: absolute;">
+		<footer>
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
 			<br /> 联系我们：4008289666
 		</footer>
@@ -237,46 +378,52 @@
 				"prods/jiaomo/prod_BA720.html",
 				"prods/shamo/prod_BA3260.html"
 			];
+			var eArry = [
+				1,2,3,4,5
+			];
 
 			function goPrev() {
-				
-				
-				count--;
-				var dv = document.getElementById("paramsDv");
-				descArry.unshift(descArry.pop());
-				dv.innerHTML = descArry[0];
-				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
-				dv.style.transform = "rotateX(" + 360 * count + "deg)";
 				box.doNext();
-				
 				tArry.unshift(tArry.pop());
 				dArry.unshift(dArry.pop());
-				
+				eArry.unshift(eArry.pop());
+				showParams();
 			};
 
 			function goNext() {
 				count++;
-				var dv = document.getElementById("paramsDv");
-				descArry.push(descArry.shift());
-				dv.innerHTML = descArry[0];
-				dv.style.webkitTransform = "rotateX(" + 360 * count + "deg)";
-				dv.style.transform = "rotateX(" + 360 * count + "deg)";
 				box.doPrev();
-				
 				tArry.push(tArry.shift());
 				dArry.push(dArry.shift());
+				eArry.push(eArry.shift());
+				showParams();
 			};
-			
-			function gotlist(){
+
+			function showParams(){
+				var e = document.getElementById("detail_"+eArry[0]);
+				var et = document.getElementById("title_"+eArry[0]);
+				for (var i=1;i<5;i++) {
+					var o = document.getElementById("detail_"+eArry[i]);
+					var ot = document.getElementById("title_"+eArry[i]);
+					o.style.display = "none";
+					o.style.visibility = "hidden";
+					ot.style.display = "none";
+					ot.style.visibility = "hidden";
+				}
+				e.style.display = "block";
+				e.style.visibility = "visible";
+				et.style.display = "block";
+				et.style.visibility = "visible";
+			}
+
+			function gotlist() {
 				location.href = tArry[0];
 			}
-			function gotDetail(){
+
+			function gotDetail() {
 				location.href = dArry[0];
 			}
 		</script>
-		<!--<div class="bgDv">
-
-		</div>-->
 	</body>
 
 </html>
