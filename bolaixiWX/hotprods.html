@@ -1,41 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<link rel="stylesheet" type="text/css" href="css/global.css" />
 		<title>多利仕|热推产品</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.content{
+				height: 100%;
+				width: 100%;
+				font-size: 0.9em;
+				font-weight: bold;
+			}
+			.dv{
+				width: 94%;
+				padding:0 3%;
+				height:25%;
+				line-height: 25%;
+			}
+			.show_1{
+				/*background-color: green;*/
+				background: url(hots/BA720_480.jpg) no-repeat;
+				background-size: cover;
+				/*color: red;*/
+			}
+			.show_2{
+				/*background-color: blue;*/
+				background:url(hots/BA3260_480.jpg) no-repeat ;
+				background-size: cover;
+				/*color: white*/
+			}
+			.show_3{
+				/*background-color: red;*/
+				background: url(hots/BD518_480.jpg) no-repeat;
+				background-size: cover;
+				/*color: yellow;*/
+			}
+			.show_4{
+				/*background-color: yellow;*/
+				background: url(hots/BD612_480.jpg) no-repeat;
+				background-size: cover;
+				/*color: blue;*/
+			}
+			.content span{
+				display: block;
+				height: 85%;
+				margin-top: 3%;
+				line-height: 100px;
+				/*border: solid 1px #000000;*/
+			}
+			.content .left{
+				float: left;
+			}
+			.content .right{
+				float: right;
+			}
+		</style>
 	</head>
 
-	<body>
+	<body style="height: 100%;">
 
-		<header>
-			<nav>
-				<div class="logoDv">
-					<div class="nav-toggle" id="popMenu"><span></span>
-					</div>
-				</div>
-			</nav>
-
-			<div id="menu" class="menu">
-				<ul>
-					<li><a href="index.html">产品展示</a>
-					</li>
-					<li><a href="join.html">招贤纳士</a>
-					</li>
-				</ul>
+		<div class="content">
+			
+			<div class="dv show_1" onclick="location.href='prods/jiaomo/prod_BA720.html'">
+				<!--<span class="left"><img src="prods/img/BA720_min.png"/></span>
+				<span class="left">BA720:100毫米-720瓦 后开关角向磨光机</span>-->
 			</div>
+			
+			<div class="dv show_2" onclick="location.href='prods/shamo/prod_BA3260.html'">
+				<!--<span class="right"><img src="prods/img/BA3260_min.png"/></span>
+				<span class="right">BD3260:113*102毫米-260瓦 平板式砂光机</span>-->
+			</div>
+			
+			<div class="dv show_3" onclick="location.href='prods/lidian/prod_BD5186.html'">
+				<!--<span class="left"><img src="prods/img/BD5186_min.png"/></span>
+				<span class="left">BD5186:21伏 锂电冲击扳手</span>-->
+			</div>
+			
+			<div class="dv show_4" onclick="location.href='prods/lidian/prod_BD612.html'">
+				<!--<span class="right"><img src="prods/img/BD612_min.png"/></span>
+				<span class="right">BD612:10毫米-12伏 锂电单速钻</span>-->
+			</div>
+			
+		</div>
 
-		</header>
-
-		<footer>
-			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
-		</footer>
-
-		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>
