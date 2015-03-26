@@ -7,11 +7,11 @@ function Box3D(opt) {
 //		{scale:1,left:72,className:"blur_level_1"},
 //		{scale:0.5,left:143,className:"blur_level_2"},
 //		{scale:0.3,left:214,className:"blur_level_3"}
-		{scale:0.2,left:-42,top:50,className:"blur_level_3"},
-		{scale:0.4,left:29,top:25,className:"blur_level_2"},
-		{scale:1,left:100,top:0,className:"blur_level_1"},
-		{scale:0.4,left:171,top:25,className:"blur_level_2"},
-		{scale:0.2,left:242,top:50,className:"blur_level_3"}
+		{scale:0.2,left:-57,top:50,className:"blur_level_3"},
+		{scale:0.4,left:14,top:25,className:"blur_level_2"},
+		{scale:1,left:85,top:0,className:"blur_level_1"},
+		{scale:0.4,left:156,top:25,className:"blur_level_2"},
+		{scale:0.2,left:227,top:50,className:"blur_level_3"}
 	];
 	
 	this.lis = this.elm.getElementsByTagName("li");
@@ -27,7 +27,7 @@ Box3D.prototype = {
 			li.style.top = "130px";
 			li.style.position = "absolute";
 //			li.style.border = "solid 1px black";
-			li.style.width = "120px";
+			li.style.width = "150px";
 			li.style.transition = "transform 0.3s ease";
 			li.style.webkitTransition = "-webkit-transform 0.3s ease";
 //			li.className = this.arr[i].className;
