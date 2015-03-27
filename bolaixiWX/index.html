@@ -72,9 +72,9 @@
 				border-radius: 5px;*/
 			}
 			.mainDesc .params ul li {
-				font-size: 0.7em;
-				line-height: 1.4em;
-				height: 1.4em;
+				font-size: 0.9em;
+				line-height: 1.5em;
+				height: 1.5em;
 			}
 			.mainDesc .params ul li span {
 				display: block;
@@ -210,10 +210,10 @@
 
 				<!--<p class="txtTitle">100毫米-720瓦 后开关角向磨光机</p>-->
 
-				<!--<span class="next" ontouchend="goNext()">&nbsp;</span>
-								<span class="prev" ontouchend="goPrev()">&nbsp;</span>-->
-				<span class="prev" onclick="goPrev()">&nbsp;</span>
-				<span class="next" onclick="goNext()">&nbsp;</span>
+				<span class="next" ontouchend="goNext()">&nbsp;</span>
+								<span class="prev" ontouchend="goPrev()">&nbsp;</span>
+				<!--<span class="prev" onclick="goPrev()">&nbsp;</span>
+				<span class="next" onclick="goNext()">&nbsp;</span>-->
 
 				<ul>
 					<li onclick="location.href='prods/jiaomo/prod_BA720.html'">
@@ -248,7 +248,7 @@
 
 				<div align="center">
 					<a href="javascript:gotlist()" class="button blue">查看系列详细</a>
-					<a href="javascript:gotDetail()" class="button green">查看单品详细</a>
+					<a href="javascript:location.href='prodlist.html'" class="button green">查看所有产品</a>
 				</div>
 
 				<div class="params">
@@ -355,11 +355,11 @@
 			<br /> 联系我们：4008289666
 		</footer>
 		<script type="text/javascript">
-			if(document.body.scrollHeight + 34 <= window.screen.height){
+			if(document.body.scrollHeight + 41 <= window.screen.height){
 				document.getElementById("footPos").style.position = "absolute";
 			}
 			else{
-				document.getElementById("padDv").style.paddingTop = "150px";
+				document.getElementById("padDv").style.paddingTop = "160px";
 			}
 		</script>
 		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>
@@ -431,9 +431,9 @@
 				location.href = tArry[0];
 			}
 
-			function gotDetail() {
-				location.href = dArry[0];
-			}
+//			function gotDetail() {
+//				location.href = dArry[0];
+//			}
 		</script>
 	</body>
 
