@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>多利仕|首页</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.default.css" /> <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="http://gmu.baidu.com/demo/mobileevent2pc.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/zepto.extend.js"></script>
+    <script type="text/javascript" src="js/zepto.ui.js"></script>
+    <script type="text/javascript" src="js/widget/slider.js"></script>
+    <!--组件依赖js end-->
+</head>
+<body>
+<!-- 代码 开始 -->
+<header>
+			<nav>
+				<div class="logoDv">
+					<div class="nav-toggle" id="popMenu"><span></span>
+					</div>
+
+					<p class="navTitle">产品展示</p>
+
+				</div>
+			</nav>
+
+			<div id="menu" class="menu">
+				<ul>
+					<li><a href="index.html">产品展示</a>
+					</li>
+					<li><a href="join.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+<div id="slider"></div>
+<script>
+
+    //创建slider组件
+    var slider = $.ui.slider('#slider', {
+        autoPlay:false,
+        showArr:false,
+        viewNum:3,
+        content:[
+            {
+                href: "#",
+                pic: "img/p1.png",
+                title:''
+            }, {
+                href: "#",
+                pic: "img/p2.png",
+                title: ""
+            }, {
+                href: "#",
+                pic: "img/p3.png",
+                title: ""
+            }, {
+                href: "#",
+                pic: "img/p4.png",
+                title: ""
+            },
+            {
+                href: "#",
+                pic: "img/p5.png",
+                title: ""
+            }, {
+                href: "#",
+                pic: "images/pic_6.jpg",
+                title: ""
+            }, {
+                href: "#",
+                pic: "images/pic_7.jpg",
+                title: ""
+            }, {
+                href: "#",
+                pic: "images/pic_8.jpg",
+                title: ""
+            }, {
+                href: "#",
+                pic: "images/pic_9.jpg",
+                title: ""
+            }, {
+                href: "#",
+                pic: "images/pic_10.jpg",
+                title: ""
+            }
+        ]
+    });
+</script>
+<!-- 图片高度自适应 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	img_height = $('.ui-slider-item').children().children('img').height();
+	$('#slider').css('height',img_height + 'px');
+})
+</script>
+</body>
+</html>
