@@ -47,7 +47,16 @@
 	border-radius: 5px;
 	
 }
+
+.typelist ul li a > div {
+    min-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .typelist ul li img{
-	width:120px;
-	height: 96px;
+	max-width: 80%;
+	max-height: 80px;
+	padding: 12px 0;
 }

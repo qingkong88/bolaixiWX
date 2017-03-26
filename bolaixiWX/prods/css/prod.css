@@ -63,6 +63,13 @@
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
+
+.text_pic > img {
+	max-width: 70%;
+	max-height: 160px;
+	padding-top: 15px;
+}
+
 h1 {
 	font-size: 1em;
 	color: #fff;

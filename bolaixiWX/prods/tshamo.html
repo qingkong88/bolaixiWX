@@ -10,6 +10,7 @@
 		<title>多利仕|砂磨系列</title>
 		<link rel="stylesheet" type="text/css" href="../css/global.css"/>
 		<link rel="stylesheet" type="text/css" href="css/type.css"/>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	</head>
 	<body>
 		<header>
@@ -34,26 +35,19 @@
 
 		</header>
 		
-		
 		<div class="typelist">
-			
-			<ul>
-				<li onclick="location.href='shamo/prod_BA330.html'">
-					<img src="img/BA330_min.png"/>
-					<p>BA330&nbsp;92*180毫米-300瓦</p>
-					<p class="p2">平板式砂光机</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='shamo/prod_BA3260.html'">
-					<img src="img/BA3260_min.png"/>
-					<p>BA3260&nbsp;113*102毫米-300瓦</p>
-					<p class="p2">平板式砂光机</p>
-					<span class="pbg"></span>
-				</li>
+			<ul id="shamoxilie">
+				<li v-for="prod in prodList">
+					<a :href="prod.link">
+				      	<img :src="prod.imageUrl"/>
+						<p>{{prod.name}}</p>
+						<p class="p2">{{prod.type}}</p>
+						<span class="pbg"></span>
+					</a>
+			    </li>
 			</ul>
-			
 		</div>
-		
+		<script src="../js/vue/shamoxilie.js" type="text/javascript" charset="utf-8"></script>
 		
 		<footer style="position:absolute">
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有

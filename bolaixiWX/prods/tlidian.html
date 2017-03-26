@@ -10,6 +10,7 @@
 		<title>多利仕|锂电系列</title>
 		<link rel="stylesheet" type="text/css" href="../css/global.css"/>
 		<link rel="stylesheet" type="text/css" href="css/type.css"/>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	</head>
 	<body>
 		<header>
@@ -34,93 +35,19 @@
 
 		</header>
 		
-		
 		<div class="typelist">
-			
-			<ul>
-				<li onclick="location.href='lidian/prod_BD612.html'">
-					<img src="img/BD612_min.png"/>
-					<p>BD612&nbsp;10毫米-12伏</p>
-					<p class="p2">锂电单速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD612.1.html'">
-					<img src="img/BD612.1_min.png"/>
-					<p>BD612.1&nbsp;10毫米-12伏</p>
-					<p class="p2">锂电单速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD612.2.html'">
-					<img src="img/BD612.2_min.png"/>
-					<p>BD612.2&nbsp;10毫米-12伏</p>
-					<p class="p2">锂电单速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD616.html'">
-					<img src="img/BD616_min.png"/>
-					<p>BD616&nbsp;10毫米-16伏</p>
-					<p class="p2">锂电双速钻</p>
-					<span class="pbg"></span>
-				</li>
-				
-				<li onclick="location.href='lidian/prod_BD5186.html'">
-					<img src="img/BD5186_min.png"/>
-					<p>BD5186&nbsp;21伏</p>
-					<p class="p2">锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD5186.1.html'">
-					<img src="img/BD5186.1_min.png"/>
-					<p>BD5186.1&nbsp;21伏</p>
-					<p class="p2">锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD5186.2.html'">
-					<img src="img/BD5186.2_min.png"/>
-					<p>BD5186.2&nbsp;21伏</p>
-					<p class="p2">锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD510.html'">
-					<img src="img/BD510_min.png"/>
-					<p>BD510  21伏 </p>
-					<p class="p2">有刷四极强磁锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD520.html'">
-					<img src="img/BD520_min.png"/>
-					<p>BD520  21伏 </p>
-					<p class="p2">无刷锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD618.html'">
-					<img src="img/BD618_min.png"/>
-					<p>BD618 10毫米 </p>
-					<p class="p2">锂电双速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD622.html'">
-					<img src="img/BD622_min.png"/>
-					<p>BD622 10毫米-12伏 </p>
-					<p class="p2">锂电双速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD612.3.html'">
-					<img src="img/BD612.3_min.png"/>
-					<p>BD612.3 10毫米-12伏 </p>
-					<p class="p2">锂电单速钻</p>
-					<span class="pbg"></span>
-				</li>
-				<li onclick="location.href='lidian/prod_BD5186.5.html'">
-					<img src="img/BD5186.5_min.png"/>
-					<p>BD5186.5 21伏 </p>
-					<p class="p2">锂电冲击扳手</p>
-					<span class="pbg"></span>
-				</li>
+			<ul id="lidianxilie">
+				<li v-for="prod in prodList">
+					<a :href="prod.link">
+				      	<img :src="prod.imageUrl"/>
+						<p>{{prod.name}}</p>
+						<p class="p2">{{prod.type}}</p>
+						<span class="pbg"></span>
+					</a>
+			    </li>
 			</ul>
-			
 		</div>
-		
+		<script src="../js/vue/lidianxilie.js" type="text/javascript" charset="utf-8"></script>
 		
 		<footer>
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
