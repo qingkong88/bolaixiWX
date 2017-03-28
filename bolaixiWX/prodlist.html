@@ -68,6 +68,24 @@
 		<script src="js/vue/jiaomoxilie.js" type="text/javascript" charset="utf-8"></script>
 		
 		<hr />
+		<h2>&gt;&gt;切割系列</h2>
+		<div class="typelist">
+			<ul id="qiegexilie">
+				<li v-for="prod in prodList">
+					<a :href="prod.link">
+				      	<div>
+				      		<img :src="prod.imageUrl"/>
+				      	</div>
+						<p>{{prod.name}}</p>
+						<p class="p2">{{prod.type}}</p>
+						<span class="pbg"></span>
+					</a>
+			    </li>
+			</ul>
+		</div>
+		<script src="js/vue/qiegexilie.js" type="text/javascript" charset="utf-8"></script>
+		
+		<hr />
 		<h2>&gt;&gt;砂磨系列</h2>
 		<div class="typelist">
 			<ul id="shamoxilie">
