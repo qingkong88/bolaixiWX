@@ -1,108 +1,453 @@
-(function loadData(){
-	var data = {
-		prodList: [
+var lidianData = {
+	BD501: {
+		name: 'BD501 整体电机4.0安时',
+		type: '锂电冲击扳手',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'大扭矩输出，稳定机型',
+			'外架专用，超高性价比'
+		],
+		guige: [
 			{
-				name: 'BD501 整体电机4.0安时',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD501.html',
-				imageUrl: '/prods/img/BD501_min.png'
+				name: '额定空载转速',
+				value: '0-2000转/分钟'
 			},
 			{
-				name: 'BD511 分体电机4.0安时',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD511.html',
-				imageUrl: '/prods/img/BD511_min.png'
+				name: '冲击频率',
+				value: '0-2500次/分钟'
 			},
 			{
-				name: 'BD521 4.0安时',
-				type: '锂电无刷扳手',
-				link: '/prods/lidian/prod_BD521.html',
-				imageUrl: '/prods/img/BD521_min.png'
+				name: '夹头',
+				value: '12.7(1/2英寸)方形'
 			},
 			{
-				name: 'BD618 10毫米',
-				type: '锂电双速钻',
-				link: '/prods/lidian/prod_BD618.html',
-				imageUrl: '/prods/img/BD618_min.png'
+				name: '最大扭矩',
+				value: '200牛顿·米'
 			},
 			{
-				name: 'BD612 10毫米-12伏',
-				type: '锂电单速钻',
-				link: '/prods/lidian/prod_BD612.html',
-				imageUrl: '/prods/img/BD612_min.png'
+				name: '电池容量',
+				value: '4.0安培·小时'
 			},
 			{
-				name: 'BD612.1 10毫米-12伏',
-				type: '锂电单速钻',
-				link: '/prods/lidian/prod_BD612.1.html',
-				imageUrl: '/prods/img/BD612.1_min.png'
-			},
-			{
-				name: 'BD612.2 10毫米-12伏',
-				type: '锂电单速钻',
-				link: '/prods/lidian/prod_BD612.2.html',
-				imageUrl: '/prods/img/BD612.2_min.png'
-			},
-			{
-				name: 'BD616 10毫米-16伏',
-				type: '锂电双速钻',
-				link: '/prods/lidian/prod_BD616.html',
-				imageUrl: '/prods/img/BD616_min.png'
-			},
-			{
-				name: 'BD5186 21伏',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD5186.html',
-				imageUrl: '/prods/img/BD5186_min.png'
-			},
-			{
-				name: 'BD5186.1 21伏',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD5186.1.html',
-				imageUrl: '/prods/img/BD5186.1_min.png'
-			},
-			{
-				name: 'BD5186.2 21伏',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD5186.2.html',
-				imageUrl: '/prods/img/BD5186.2_min.png'
-			},
-			{
-				name: 'BD510  21伏',
-				type: '有刷四极强磁锂电冲击扳手',
-				link: '/prods/lidian/prod_BD510.html',
-				imageUrl: '/prods/img/BD510_min.png'
-			},
-			{
-				name: 'BD520  21伏',
-				type: '无刷锂电冲击扳手',
-				link: '/prods/lidian/prod_BD520.html',
-				imageUrl: '/prods/img/BD520_min.png'
-			},
-			{
-				name: 'BD622 10毫米-12伏',
-				type: '锂电双速钻',
-				link: '/prods/lidian/prod_BD622.html',
-				imageUrl: '/prods/img/BD622_min.png'
-			},
-			{
-				name: 'BD612.3 10毫米-12伏',
-				type: '锂电单速钻',
-				link: '/prods/lidian/prod_BD612.3.html',
-				imageUrl: '/prods/img/BD612.3_min.png'
-			},
-			{
-				name: 'BD5186.5 21伏',
-				type: '锂电冲击扳手',
-				link: '/prods/lidian/prod_BD5186.5.html',
-				imageUrl: '/prods/img/BD5186.5_min.png'
+				name: '重量',
+				value: '1.7千克'
 			}
-		]
-	};
-	
-	
-	var instance = new Vue({
-		el: '#lidianxilie',
-		data: data
-	});
-})()
+		],
+		tezheng: ['进口开关', '进口碳刷（可更换）', '高效能四极强磁马达', '铝制头壳', '锂电池技术，容量大', '无记忆功能，无自放电'],
+		fujian: ['电池包  2个', '充电器', '吹塑盒', '备用油脂', '22#套筒', '背带*2', '套筒圈']
+	},
+	BD508: {
+		name: 'BD508 整体电机6.6安时',
+		type: '锂电扳手',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'超大电池容量，超长续航'
+		],
+		guige: [
+			{
+				name: '额定空载转速',
+				value: '0-2000转/分钟'
+			},
+			{
+				name: '冲击频率',
+				value: '0-2500次/分钟'
+			},
+			{
+				name: '夹头',
+				value: '12.7(1/2英寸)方形'
+			},
+			{
+				name: '最大扭矩',
+				value: '200牛顿·米'
+			},
+			{
+				name: '电池容量',
+				value: '6.6安培·小时'
+			},
+			{
+				name: '重量',
+				value: '1.8千克'
+			}
+		],
+		tezheng: [],
+		fujian: []
+	},
+	BD511: {
+		name: 'BD511 分体电机4.0安时',
+		type: '锂电冲击扳手',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'分体强磁四级电机，大扭矩输出'
+		],
+		guige: [
+			{
+				name: '额定空载转速',
+				value: '0-2000转/分钟'
+			},
+			{
+				name: '冲击频率',
+				value: '0-2500次/分钟'
+			},
+			{
+				name: '夹头',
+				value: '12.7(1/2英寸)方形'
+			},
+			{
+				name: '最大扭矩',
+				value: '300牛顿·米'
+			},
+			{
+				name: '电池容量',
+				value: '4.0安培·小时'
+			},
+			{
+				name: '重量',
+				value: '1.7千克'
+			}
+		],
+		tezheng: ['进口开关', '进口碳刷（可更换）', '高效能四极强磁马达', '铝制头壳', '锂电池技术，容量大', '无记忆功能，无自放电'],
+		fujian: ['电池包  2个', '充电器', '吹塑盒', '备用油脂', '22#套筒', '背带*2', '套筒圈']
+	},
+	BD518: {
+		name: 'BD518分体电机6.6安时',
+		type: '锂电冲击扳手',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'分体强磁四级电机，大扭矩输出',
+			'超大电池容量，超长续航'
+		],
+		guige: [
+			{
+				name: '额定空载转速',
+				value: '0-2000转/分钟'
+			},
+			{
+				name: '冲击频率',
+				value: '0-2500次/分钟'
+			},
+			{
+				name: '夹头',
+				value: '12.7(1/2英寸)方形'
+			},
+			{
+				name: '最大扭矩',
+				value: '300牛顿·米'
+			},
+			{
+				name: '电池容量',
+				value: '6.6安培·小时'
+			},
+			{
+				name: '重量',
+				value: '1.8千克'
+			}
+		],
+		tezheng: [],
+		fujian: []
+	},
+	BD521: {
+		name: 'BD521 4.0安时',
+		type: '锂电无刷扳手',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'无刷电机，大扭矩输出，超长寿命'
+		],
+		guige: [
+			{
+				name: '额定空载转速',
+				value: '0-2700转/分钟'
+			},
+			{
+				name: '冲击频率',
+				value: '0-3000次/分钟'
+			},
+			{
+				name: '夹头',
+				value: '12.7(1/2英寸)方形'
+			},
+			{
+				name: '最大扭矩',
+				value: '380牛顿·米'
+			},
+			{
+				name: '电池容量',
+				value: '4.0安培·小时'
+			},
+			{
+				name: '重量',
+				value: '1.7千克'
+			}
+		],
+		tezheng: ['反转自停功能', '二档扭矩扭矩调节', '紧凑机身设计', '全铝头壳设计', '锂电池技术，容量大', '无记忆功能，无自放电'],
+		fujian: ['电池包  2个', '充电器', '吹塑盒', '备用油脂', '22#套筒', '背带*2', '套筒圈']
+	},
+	BD618: {
+		name: 'BD618 10毫米',
+		type: '锂电双速钻',
+		miaoshu: [
+			'纤细手柄，舒适握持',
+			'大扭矩，高效钻孔',
+			'彩钢瓦安装首选机型'
+		],
+		guige: [
+			{
+				name: '额定空载转速',
+				value: '0-400/0-1300转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米'
+			},
+			{
+				name: '最大扭矩',
+				value: '55牛顿.米'
+			},
+			{
+				name: '钻孔能力',
+				value: '木材38毫米'
+			},
+			{
+				name: '',
+				value: '钢材13毫米'
+			},
+			{
+				name: '电池容量',
+				value: '1.5安培·小时'
+			},
+			{
+				name: '重量',
+				value: '1.2千克'
+			}
+		],
+		tezheng: ['大功率马达', '60分钟快速充电', '10毫米自锁式手紧式钻夹头', '10毫米手紧式钻夹头', '两档机械调速', '正反转', '机身带工作灯', '锂电池技术，容量大', '紧凑式机身设计', '无记忆功能，无自放电', '软包胶手柄'],
+		fujian: ['电池包  2个', '充电器', '塑盒包装']
+	},
+	'BD612.2': {
+		name: 'BD612.2 10毫米-12伏',
+		type: '锂电单速钻',
+		miaoshu: [
+			'进口电机，动力强劲',
+			'小巧外观，舒适握持',
+			'高品质锂电池，工作时间更持久'
+		],
+		guige: [
+			{
+				name: '电池电压',
+				value: '12伏特'
+			},
+			{
+				name: '额定空载转速',
+				value: '0-650转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米'
+			},
+			{
+				name: '最大扭矩',
+				value: '22牛顿.米'
+			},
+			{
+				name: '扭力调节档位',
+				value: '22档（含钻进档）'
+			},
+			{
+				name: '充电时间',
+				value: '60分钟'
+			},
+			{
+				name: '电池容量',
+				value: '1500毫安.小时'
+			},
+			{
+				name: '重量',
+				value: '1.0千克'
+			}
+		],
+		tezheng: ['10毫米手紧式钻夹头', '正反转', '机身带工作灯', '锂电池技术，容量大', '紧凑式机身设计', '无记忆功能，无自放电', '软包胶手柄'],
+		fujian: ['电池包  2个 进口电池', '充电器', '纸盒包装']
+	},
+	'BD612.3': {
+		name: 'BD612.3 10毫米-12伏',
+		type: '锂电单速钻',
+		miaoshu: [
+			'进口电机，动力强劲',
+			'小巧外观，舒适握持',
+			'高品质锂电池，工作时间更持久'
+		],
+		guige: [
+			{
+				name: '电池电压',
+				value: '12伏特'
+			},
+			{
+				name: '额定空载转速',
+				value: '0-650转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米'
+			},
+			{
+				name: '最大扭矩',
+				value: '22牛顿.米'
+			},
+			{
+				name: '电池容量',
+				value: '1.5安培.小时'
+			},
+			{
+				name: '重量',
+				value: '1.0千克'
+			}
+		],
+		tezheng: [],
+		fujian: []
+	},
+	BD616: {
+		name: 'BD616 10毫米-16伏',
+		type: '锂电双速钻',
+		miaoshu: [
+			'进口电机，动力强劲',
+			'小巧外观，舒适握持',
+			'高品质锂电池，工作时间更持久'
+		],
+		guige: [
+			{
+				name: '电池电压',
+				value: '16伏特'
+			},
+			{
+				name: '额定空载转速',
+				value: '0-400/0-1500转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米'
+			},
+			{
+				name: '最大扭矩',
+				value: '35牛顿.米'
+			},
+			{
+				name: '扭力调节档位',
+				value: '16档（含钻进档）'
+			},
+			{
+				name: '钻孔能力',
+				value: '木材28毫米'
+			},
+			{
+				name: '',
+				value: '钢材10毫米'
+			},
+			{
+				name: '充电时间',
+				value: '30分钟'
+			},
+			{
+				name: '电池容量',
+				value: '1500毫安.小时'
+			},
+			{
+				name: '重量',
+				value: '1.2千克'
+			}
+		],
+		tezheng: ['大功率马达', '30分钟快速充电', '18V的动力，12V尺寸', '15分钟充满75%', '10毫米手紧式钻夹头', '两档机械调速', '正反转', '机身带工作灯', '锂电池技术，容量大', '紧凑式机身设计', '无记忆功能，无自放电', '软包胶手柄'],
+		fujian: ['电池包  2个', '充电器', '纸盒包装']
+	},
+	BD621: {
+		name: 'BD621 10毫米-12伏',
+		type: '锂电双速钻',
+		miaoshu: [
+			'紧凑机身，舒适握持',
+			'大扭矩输出'
+		],
+		guige: [
+			{
+				name: '电池电压',
+				value: '12伏特'
+			},
+			{
+				name: '额定空载转速',
+				value: '0-400/0-1300转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米手紧式'
+			},
+			{
+				name: '最大扭矩',
+				value: '22牛顿.米'
+			},
+			{
+				name: '扭力调节档位',
+				value: '16档（含钻进档）'
+			},
+			{
+				name: '电池容量',
+				value: '1.5安培.小时'
+			},
+			{
+				name: '重量',
+				value: '1.0千克'
+			}
+		],
+		tezheng: ['大功率马达', '60分钟快速充电', '18V的动力，12V尺寸', '10毫米手紧式钻夹头', '两档机械调速', '正反转', '机身带工作灯', '锂电池技术，容量大', '紧凑式机身设计', '无记忆功能，无自放电', '软包胶手柄'],
+		fujian: ['电池包  2个', '充电器', '纸盒包装']
+	},
+	BD622: {
+		name: 'BD622 10毫米-12伏',
+		type: '锂电双速钻',
+		miaoshu: [
+			'进口电机，动力强劲',
+			'小巧外观，舒适握持',
+			'高品质锂电池，工作时间更持久'
+		],
+		guige: [
+			{
+				name: '电池电压',
+				value: '12伏特'
+			},
+			{
+				name: '额定空载转速',
+				value: '0-400/0-1350转/分钟'
+			},
+			{
+				name: '夹头',
+				value: '10毫米'
+			},
+			{
+				name: '最大扭矩',
+				value: '20牛顿.米'
+			},
+			{
+				name: '扭力调节档位',
+				value: '16档（含钻进档）'
+			},
+			{
+				name: '钻孔能力',
+				value: '木材25毫米'
+			},
+			{
+				name: '',
+				value: '钢材10毫米'
+			},
+			{
+				name: '充电时间',
+				value: '60分钟'
+			},
+			{
+				name: '电池容量',
+				value: '1500毫安.小时'
+			},
+			{
+				name: '重量',
+				value: '1.2千克'
+			}
+		],
+		tezheng: ['大功率马达', '60分钟快速充电', '18V的动力，12V尺寸', '10毫米手紧式钻夹头', '两档机械调速', '正反转', '机身带工作灯', '锂电池技术，容量大', '紧凑式机身设计', '无记忆功能，无自放电', '软包胶手柄'],
+		fujian: ['电池包  2个', '充电器', '纸盒包装']
+	}
+};

@@ -31,7 +31,7 @@ Box3D.prototype = {
 			li.style.transition = "transform 0.3s ease";
 			li.style.webkitTransition = "-webkit-transform 0.3s ease";
 //			li.className = this.arr[i].className;
-			img.style.width = "100%";
+//			img.style.width = "100%";
 		}
 		return this;
 	},

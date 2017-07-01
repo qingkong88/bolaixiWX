@@ -5,7 +5,12 @@
 header {
 	width: 100%;
 }
+html {
+	height: 100%;
+}
 body {
+	position: relative;
+	min-height: 100%;
 	font: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;
 	color: #666666;
 	background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
@@ -107,10 +112,15 @@ nav {
 .nav-toggle span:after {
 	bottom: -6px;
 }
-footer {
-	/*position: inherit;*/
+
+.foot-line {
 	clear: both;
+	margin-bottom: 35px;
+}
+
+footer {
 	bottom: 0;
+	position: absolute;
 	width: 100% ;
 	font-size: 0.8em;
 	max-height: 44px;

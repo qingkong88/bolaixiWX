@@ -53,10 +53,10 @@
 		<h2>&gt;&gt;角磨系列</h2>
 		<div class="typelist">
 			<ul id="jiaomoxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=jiaomo&prod=' + key">
 				      	<div>
-				      		<img :src="prod.imageUrl"/>
+				      		<img :src="'/prods/img/' + key + '_min.png'"/>
 				      	</div>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
@@ -66,15 +66,21 @@
 			</ul>
 		</div>
 		<script src="js/vue/jiaomoxilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#jiaomoxilie',
+				data: {prodList: jiaomoData}
+			});
+		</script>
 		
 		<hr />
 		<h2>&gt;&gt;切割系列</h2>
 		<div class="typelist">
 			<ul id="qiegexilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=qiege&prod=' + key">
 				      	<div>
-				      		<img :src="prod.imageUrl"/>
+				      		<img :src="'/prods/img/' + key + '_min.png'"/>
 				      	</div>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
@@ -84,14 +90,20 @@
 			</ul>
 		</div>
 		<script src="js/vue/qiegexilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#qiegexilie',
+				data: {prodList: qiegeData}
+			});
+		</script>
 		
 		<hr />
 		<h2>&gt;&gt;砂磨系列</h2>
 		<div class="typelist">
 			<ul id="shamoxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
-				      	<img :src="prod.imageUrl"/>
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=shamo&prod=' + key">
+				      	<img :src="'/prods/img/' + key + '_min.png'"/>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
 						<span class="pbg"></span>
@@ -100,14 +112,20 @@
 			</ul>
 		</div>
 		<script src="js/vue/shamoxilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#shamoxilie',
+				data: {prodList: shamoData}
+			});
+		</script>
 		
 		<hr />
 		<h2>&gt;&gt;锂电系列</h2>
 		<div class="typelist">
 			<ul id="lidianxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
-				      	<img :src="prod.imageUrl"/>
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=lidian&prod=' + key">
+				      	<img :src="'/prods/img/' + key + '_min.png'"/>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
 						<span class="pbg"></span>
@@ -116,14 +134,20 @@
 			</ul>
 		</div>
 		<script src="js/vue/lidianxilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#lidianxilie',
+				data: {prodList: lidianData}
+			});
+		</script>
 		
 		<hr />
 		<h2>&gt;&gt;锤钻系列</h2>
 		<div class="typelist">
 			<ul id="chuizuanxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
-				      	<img :src="prod.imageUrl"/>
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=chuizuan&prod=' + key">
+				      	<img :src="'/prods/img/' + key + '_min.png'"/>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
 						<span class="pbg"></span>
@@ -132,16 +156,20 @@
 			</ul>
 		</div>
 		<script src="js/vue/chuizuanxilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#chuizuanxilie',
+				data: {prodList: chuizuanData}
+			});
+		</script>
 		
 		<hr />
 		<h2>&gt;&gt;直磨系列</h2>
 		<div class="typelist">
 			<ul id="zhimoxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
-						<div>
-							<img :src="prod.imageUrl"/>
-						</div>
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'/prods/details.html?prodtype=zhimo&prod=' + key">
+				      	<img :src="'/prods/img/' + key + '_min.png'"/>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
 						<span class="pbg"></span>
@@ -150,8 +178,15 @@
 			</ul>
 		</div>
 		<script src="js/vue/zhimoxilie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#zhimoxilie',
+				data: {prodList: zhimoData}
+			});
+		</script>
+		<div class="foot-line"></div>
 		
-		<footer style="">
+		<footer>
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
 		</footer>
 		<script src="js/func.js" type="text/javascript" charset="utf-8"></script>

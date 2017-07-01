@@ -1,24 +1,76 @@
-(function loadData(){
-	var data = {
-		prodList: [
+var shamoData = {
+	BA330: {
+		name: 'BA330 92*180毫米-300瓦',
+		type: '平板式砂光机',
+		miaoshu: [
+			'强劲电机，业内最高功率',
+			'软包胶顶盖，操作更舒适',
+			'简式机身，高品质部件，超常寿命'
+		],
+		guige: [
 			{
-				name: 'BA330 92*180毫米-300瓦',
-				type: '平板式砂光机',
-				link: '/prods/shamo/prod_BA330.html',
-				imageUrl: '/prods/img/BA330_min.png'
+				name: '额定输入功率',
+				value: '300瓦'
 			},
 			{
-				name: 'BA3260 113*102毫米-260瓦',
-				type: '平板式砂光机',
-				link: '/prods/shamo/prod_BA3260.html',
-				imageUrl: '/prods/img/BA3260_min.png'
+				name: '额定转速',
+				value: '17000转/分钟'
+			},
+			{
+				name: '底板尺寸',
+				value: '92*180毫米'
+			},
+			{
+				name: '砂纸尺寸',
+				value: '93*230毫米'
+			},
+			{
+				name: '轨道直径',
+				value: '2.4毫米'
+			},
+			{
+				name: '重量',
+				value: '1.6千克'
 			}
-		]
-	};
-	
-	
-	var instance = new Vue({
-		el: '#shamoxilie',
-		data: data
-	});
-})()
+		],
+		tezheng: ['铝制底板', '开关带自锁功能', '软包胶手柄', '超强连体摆动脚'],
+		fujian: []
+	},
+	BA3260: {
+		name: 'BA3260 113*102毫米-260瓦',
+		type: '平板式砂光机',
+		miaoshu: [
+			'小巧机身，舒适握持',
+			'高效砂磨，手柄低振动',
+			'打转扭矩小，操控舒适'
+		],
+		guige: [
+			{
+				name: '额定输入功率',
+				value: '260瓦'
+			},
+			{
+				name: '额定转速',
+				value: '13500转/分钟'
+			},
+			{
+				name: '底板尺寸',
+				value: '113*102毫米'
+			},
+			{
+				name: '砂纸尺寸',
+				value: '140*115毫米'
+			},
+			{
+				name: '轨道直径',
+				value: '1.5毫米'
+			},
+			{
+				name: '重量',
+				value: '1.1千克'
+			}
+		],
+		tezheng: ['新超小型软包胶手柄', '防尘开关', '带护套开关', '超强连体摆动脚'],
+		fujian: []
+	}
+};

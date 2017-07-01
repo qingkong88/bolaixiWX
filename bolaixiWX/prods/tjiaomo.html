@@ -37,11 +37,9 @@
 		
 		<div class="typelist">
 			<ul id="jiaomoxilie">
-				<li v-for="prod in prodList">
-					<a :href="prod.link">
-						<div>
-				      		<img :src="prod.imageUrl"/>
-				      	</div>
+				<li v-for="(prod, key) in prodList" v-once>
+					<a :href="'details.html?prodtype=jiaomo&prod=' + key">
+				      	<img :src="'/prods/img/' + key + '_min.png'"/>
 						<p>{{prod.name}}</p>
 						<p class="p2">{{prod.type}}</p>
 						<span class="pbg"></span>
@@ -50,8 +48,13 @@
 			</ul>
 		</div>
 		<script src="../js/vue/jiaomoxilie.js" type="text/javascript" charset="utf-8"></script>
-		
-		
+		<script type="text/javascript">
+			var instance = new Vue({
+				el: '#jiaomoxilie',
+				data: {prodList: jiaomoData}
+			});
+		</script>
+		<div class="foot-line"></div>
 		<footer style="">
 			Copyright&nbsp;&copy;&nbsp;2015&nbsp;所有版权归多利仕所有
 		</footer>
