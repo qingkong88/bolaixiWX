@@ -17,3 +17,11 @@ function getQueryValue(key) {
 	
 	return match && match[1] || '';
 }
+
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?7a81508de565a60607c355daf93a9f23";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
