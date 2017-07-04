@@ -28,10 +28,16 @@ Box3D.prototype = {
 			li.style.position = "absolute";
 //			li.style.border = "solid 1px black";
 			li.style.width = "150px";
+			li.style.height = "121px";
 			li.style.transition = "transform 0.3s ease";
 			li.style.webkitTransition = "-webkit-transform 0.3s ease";
 //			li.className = this.arr[i].className;
-//			img.style.width = "100%";
+			img.style.maxWidth = "100%";
+			img.style.maxHeight = "100%";
+			img.style.position = "absolute";
+			img.style.top = "50%";
+			img.style.left = "50%";
+			img.style.transform = "translate3d(-50%, -50%, 0)";
 		}
 		return this;
 	},
@@ -51,6 +57,7 @@ Box3D.prototype = {
 //			li.style.transform = "scale("+this.arr[i].scale+","+this.arr[i].scale+")";
 			li.style.webkitTransform = "translate3d("+this.arr[i].left+"px,"+this.arr[i].top+"px,0) scale("+this.arr[i].scale+","+this.arr[i].scale+")";
 			li.style.transform = "translate3d("+this.arr[i].left+"px,"+this.arr[i].top+"px,0) scale("+this.arr[i].scale+","+this.arr[i].scale+")";
+//			li.style.width = "100%";
 			
 			
 //			li.style.left = this.arr[i].left+"px";
