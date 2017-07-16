@@ -1,6 +1,6 @@
 var chuizuanData = {
 	BA231: {
-		name: 'BA231 1250瓦30毫米',
+		name: 'BA231 30毫米',
 		type: '单功能电锤',
 		miaoshu: [
 			'大功率，大气缸，高锤击效',
@@ -196,7 +196,7 @@ var chuizuanData = {
 		fujian: [ '吹塑盒']
 	},
 	BA660: {
-		name: 'BA660 13MM-650瓦',
+		name: 'BA660 10MM-650瓦',
 		type: '手电钻',
 		miaoshu: [
 			'纤细机身，单手操作舒适握持',

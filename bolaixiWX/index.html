@@ -27,18 +27,32 @@
 			.titlebox {
 				position: absolute;
 				width: 100%;
-				height: 66px;
-				background: url(img/logo.png) no-repeat left top;
+				height: 50px;
 			}
+			
+			.titlebox:before {
+				background-color: gray;
+				content: '';
+				opacity: 0.7;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 1;
+			}
+			
 			.titlebox .contentTitle {
+				background: url(img/logo.png) no-repeat 10px 5px;
+				background-size: 100px 36px;
+				position: relative;
 				padding: 5px 2%;
 				float: left;
-				margin-left: 120px;
+				padding-left: 120px;
 				height: 36px;
-				color: #EFD056;
+				color: #f18d00;
 				font-size: 0.9em;
 				font-weight: bold;
 				text-shadow: 1px 1px #000000;
+				z-index: 2;
 				/*-moz-box-shadow: 3px -2px 12px #eee inset;
 				-webkit-box-shadow: 3px -2px 12px #eee inset;
 				box-shadow: 3px -2px 12px #eee inset;*/
